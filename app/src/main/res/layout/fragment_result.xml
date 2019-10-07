@@ -10,14 +10,14 @@
 
     <TextView
         android:id="@+id/text_information"
-        android:layout_width="284dp"
-        android:layout_height="59dp"
-        android:text="Add Your Information Here"
-        android:textSize="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.614"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Add Your Informatio Here"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
@@ -26,13 +26,17 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="341dp" />
 
+
     <Button
         android:id="@+id/button_try_again"
         android:layout_width="238dp"
         android:layout_height="53dp"
+        android:layout_marginTop="20dp"
         android:text="TRY AGAIN"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_information" />
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.498"
+/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.BodyMassIndexFragment" >
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Body Mass Index"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/text_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="84dp"
+        android:text="Height"
+        app:layout_constraintEnd_toStartOf="@+id/input_height"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Guideline
+
+
+
+        android:id="@+id/guideline"
+
+
+
+        android:layout_width="wrap_content"
+
+
+
+        android:layout_height="wrap_content"
+
+
+
+        android:orientation="vertical"
+
+
+
+        app:layout_constraintGuide_percent="0.3" />
+
+
+
+
+
+
+
+    <Button
+
+
+
+        android:id="@+id/button_calculate"
+
+
+
+        android:layout_width="363dp"
+
+
+
+        android:layout_height="53dp"
+
+
+
+        android:layout_marginTop="16dp"
+
+
+
+        android:text="Calculate"
+
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+
+        app:layout_constraintStart_toStartOf="parent"
+
+
+
+        app:layout_constraintTop_toBottomOf="@+id/input_weight" />
+
+
+
+
+
+
+
+    <EditText
+
+
+
+        android:id="@+id/input_height"
+
+
+
+        android:layout_width="wrap_content"
+
+
+
+        android:layout_height="wrap_content"
+
+
+
+        android:layout_marginTop="12dp"
+
+
+
+        android:ems="10"
+
+
+
+        android:hint="Input your height (cm)"
+
+
+
+        android:inputType="textPersonName"
+
+
+
+        android:textColor="@android:color/secondary_text_dark"
+
+
+
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+
+
+
+        app:layout_constraintTop_toBottomOf="@+id/text_title" />
+
+
+
+
+
+
+
+    <EditText
+
+
+
+        android:id="@+id/input_weight"
+
+
+
+        android:layout_width="wrap_content"
+
+
+
+        android:layout_height="wrap_content"
+
+
+
+        android:layout_marginTop="12dp"
+
+
+
+        android:ems="10"
+
+
+
+        android:hint="Input your weight (kg)"
+
+
+
+        android:inputType="textPersonName"
+
+
+
+        android:textColor="@android:color/secondary_text_dark"
+
+
+
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+
+
+
+        app:layout_constraintTop_toBottomOf="@+id/input_height" />
+
+
+
+
+
+
+
+    <TextView
+
+
+
+        android:id="@+id/text_weight"
+
+
+
+        android:layout_width="wrap_content"
+
+
+
+        android:layout_height="wrap_content"
+
+
+
+        android:layout_marginStart="36dp"
+
+
+
+        android:layout_marginTop="36dp"
+
+
+
+        android:text="Weight"
+
+
+
+        app:layout_constraintStart_toStartOf="parent"
+
+
+
+        app:layout_constraintTop_toBottomOf="@+id/text_height" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
